@@ -1,0 +1,73 @@
+/* ============================
+*  Hero
+* ========================== */
+.p-top-hero {
+  width: 100%;
+  height: calc(100dvh - 5rem);
+  background-color: var(--bg-color-hero);
+
+  @media screen and (max-width: 768px) {
+    height: calc(100dvh - 3.5rem);
+  }
+}
+
+.p-top-hero__content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  height: 100%;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.p-top-hero__label {
+  display: block;
+
+  margin-block-end: 1.5rem;
+
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-color-secondary);
+}
+
+.p-top-hero__title {
+  margin-block-end: 2rem;
+}
+
+.p-top-hero__desc {
+  max-width: 440px;
+  width: 100%;
+
+  margin-block-end: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.p-top-hero__cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  @media screen and (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & .c-button {
+      width: 100%;
+    }
+  }
+}
+
+.p-top-hero__image {
+  @media screen and (max-width: 768px) {
+    & .p-top-hero__img {
+      aspect-ratio: 16 / 9;
+    }
+  }
+}

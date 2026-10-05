@@ -3,6 +3,7 @@
 * ========================== */
 .l-header {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
 
@@ -84,7 +85,7 @@
 
       height: 2px;
       width: 100%;
-      background-color: var(--text-color-primary);
+      background-color: var(--text-color-header);
     }
     & .c-hamburger-menu__line::before,
     & .c-hamburger-menu__line::after {
@@ -95,7 +96,7 @@
 
       height: 2px;
       width: 100%;
-      background-color: var(--text-color-primary);
+      background-color: var(--text-color-header);
 
       transition: var(--transition-slow);
     }
@@ -172,7 +173,7 @@
     text-decoration-thickness: 2px;
     text-underline-offset: 0.4em;
 
-    color: var(--text-color-primary);
+    color: var(--text-color-header);
   }
 
   .c-nav__link {
