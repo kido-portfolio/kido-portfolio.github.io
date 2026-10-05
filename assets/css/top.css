@@ -76,6 +76,8 @@
 *  About
 * ========================== */
 .p-top-about {
+  background-color: var(--bg-color-primary);
+
   & .l-container {
     display: grid;
     grid-template-columns: minmax(auto, 467px) 1fr;
@@ -98,4 +100,25 @@
   gap: 1.5rem;
 
   margin-block-end: 2.5rem;
+}
+
+/* ============================
+*  Worksout
+* ========================== */
+.p-top-works {
+  background-color: var(--bg-color-secondary);
+
+  & .l-container {
+    padding-block: 6rem;
+  }
+}
+
+.p-top-works__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
