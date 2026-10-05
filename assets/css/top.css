@@ -71,3 +71,31 @@
     }
   }
 }
+
+/* ============================
+*  About
+* ========================== */
+.p-top-about {
+  & .l-container {
+    display: grid;
+    grid-template-columns: minmax(auto, 467px) 1fr;
+    align-items: center;
+    gap: clamp(2rem, 5.86vw, 5rem);
+
+    padding-block: 6rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      padding-block: 4rem;
+    }
+  }
+}
+
+.p-top-about__descs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  margin-block-end: 2.5rem;
+}
