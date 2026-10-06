@@ -8,8 +8,10 @@
 
   --bg-color-header: #fff;
   --bg-color-hero: #d8d8d8;
+  --bg-color-footer: #111;
   --bg-color-primary: #fff;
   --bg-color-secondary: #fafaf8;
+  --bg-color-thirdly: #111;
 
   --transition-base: 0.2s ease;
   --transition-slow: 0.4s ease;
