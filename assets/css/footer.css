@@ -1,0 +1,143 @@
+/* ============================
+*  Footer
+* ========================== */
+.l-footer {
+  padding-block: 4rem 2rem;
+  background-color: var(--bg-color-footer);
+
+  & .l-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.l-footer__nav-link {
+  color: var(--text-color-footer-nav);
+}
+
+.l-footer__main {
+  display: grid;
+  grid-template-columns: minmax(auto, 270px) 1fr;
+  gap: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.l-footer__profile {
+  flex-shrink: 0;
+
+  & .l-footer__profile-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-block-end: 0.5rem;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  & .l-footer__profile-logo-img {
+    width: 1.75rem;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    font-size: 0;
+    line-height: 0;
+  }
+
+  & .l-footer__profile-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-color-thirdly);
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.125rem;
+    }
+  }
+
+  & .l-footer__profile-description {
+    font-size: 0.75rem;
+    line-height: 1.7;
+  }
+}
+
+.l-footer__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'nav social'
+      'contact contact';
+  }
+
+  & .l-footer__nav-heading {
+    margin-block-end: 0.875rem;
+
+    font-size: 0.625rem;
+    text-transform: uppercase;
+  }
+
+  & .l-footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .l-footer__nav-item {
+    font-size: 0.688rem;
+    color: var(--text-color-footer-nav);
+
+    @media screen and (max-width: 768px) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.l-footer__nav-column--navigation {
+  grid-area: nav;
+}
+
+.l-footer__nav-column--social {
+  grid-area: social;
+}
+
+.l-footer__nav-column--contact {
+  grid-area: contact;
+}
+
+.l-footer__contact {
+  & .l-footer__nav-item {
+    display: flex;
+    gap: 0.25rem;
+  }
+
+  & .l-footer__nav-item-label {
+    font-weight: 700;
+  }
+  & .l-footer__nav-item-label::after {
+    content: ':';
+  }
+}
+
+.l-footer__bottom {
+  padding-block-start: 1.5rem;
+  border-top: 1px solid var(--bg-color-primary);
+}
+
+.l-footer__copyright {
+  display: block;
+  font-size: 0.625rem;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}

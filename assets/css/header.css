@@ -53,6 +53,7 @@
     line-height: 1.5;
     letter-spacing: 0.56px;
     font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
   }
 }
 
@@ -137,6 +138,8 @@
 
     padding-block: 2rem;
     padding-inline: 1rem;
+
+    background-color: var(--bg-color-primary);
 
     transition: var(--transition-slow);
 
