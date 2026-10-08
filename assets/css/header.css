@@ -34,27 +34,24 @@
   }
 }
 
-.l-header__title {
-  & .l-header__link {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-  }
+.l-header__link {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
 
-  & .l-header__icon {
-    width: 1.75rem;
+.l-header__icon {
+  width: 1.75rem;
+  aspect-ratio: 1 / 1;
+}
 
-    aspect-ratio: 1 / 1;
-  }
-
-  & .l-header__logo-text {
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.56px;
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-  }
+.l-header__logo-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.56px;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
 }
 
 .l-header__top {
@@ -78,50 +75,56 @@
 
     width: 1.5rem;
     height: 2.25rem;
+  }
 
-    & .c-hamburger-menu__line {
-      position: relative;
+  /* Open state */
+  &.is-open .c-hamburger-menu__line {
+    background-color: transparent;
+  }
 
-      display: block;
+  &.is-open .c-hamburger-menu__line::before,
+  &.is-open .c-hamburger-menu__line::after {
+    top: 0;
+  }
 
-      height: 2px;
-      width: 100%;
-      background-color: var(--text-color-header);
-    }
-    & .c-hamburger-menu__line::before,
-    & .c-hamburger-menu__line::after {
-      content: '';
-      position: absolute;
+  &.is-open .c-hamburger-menu__line::before {
+    transform: rotate(-25deg);
+  }
 
-      left: 0;
+  &.is-open .c-hamburger-menu__line::after {
+    transform: rotate(25deg);
+  }
+}
 
-      height: 2px;
-      width: 100%;
-      background-color: var(--text-color-header);
+.c-hamburger-menu__line {
+  position: relative;
 
-      transition: var(--transition-slow);
-    }
-    & .c-hamburger-menu__line::before {
-      top: -0.5rem;
-    }
-    & .c-hamburger-menu__line::after {
-      top: 0.5rem;
-    }
+  display: block;
 
-    /* Open state */
-    &.is-open .c-hamburger-menu__line {
-      background-color: transparent;
-    }
-    &.is-open .c-hamburger-menu__line::before,
-    &.is-open .c-hamburger-menu__line::after {
-      top: 0;
-    }
-    &.is-open .c-hamburger-menu__line::before {
-      transform: rotate(-25deg);
-    }
-    &.is-open .c-hamburger-menu__line::after {
-      transform: rotate(25deg);
-    }
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color-header);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+
+    left: 0;
+
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-color-header);
+
+    transition: var(--transition-slow);
+  }
+
+  &::before {
+    top: -0.5rem;
+  }
+
+  &::after {
+    top: 0.5rem;
   }
 }
 
@@ -135,6 +138,7 @@
     right: -100%;
 
     height: calc(100dvh - 3.5rem);
+    width: 100%;
 
     padding-block: 2rem;
     padding-inline: 1rem;
@@ -143,14 +147,15 @@
 
     transition: var(--transition-slow);
 
-    width: 100%;
-
     &.is-open {
       right: 0;
     }
   }
 }
 
+/*-------------------------
+  Nav
+-------------------------*/
 .c-nav__list {
   display: flex;
   align-items: center;
@@ -170,8 +175,26 @@
 .c-nav__item {
   height: 1.375rem;
 
-  &:hover .c-nav__link,
-  & .c-nav__link[aria-current='page'] {
+  &:hover .c-nav__link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.4em;
+
+    color: var(--text-color-header);
+  }
+}
+
+.c-nav__link {
+  height: 100%;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #8a8a86;
+  text-align: center;
+
+  transition: var(--transition-base);
+
+  &[aria-current='page'] {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 0.4em;
@@ -179,18 +202,7 @@
     color: var(--text-color-header);
   }
 
-  .c-nav__link {
-    height: 100%;
-    font-size: 0.75rem;
-    line-height: 1.5;
-    font-weight: 500;
-    color: #8a8a86;
-    text-align: center;
-
-    transition: var(--transition-base);
-
-    @media screen and (max-width: 768px) {
-      font-size: 1rem;
-    }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
   }
 }

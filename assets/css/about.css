@@ -1,0 +1,12 @@
+/* ============================
+*  About
+* ========================== */
+.l-main.p-about {
+  background-color: var(--bg-color-secondary);
+}
+
+.p-about__header {
+  & .l-container {
+    padding-block: 6rem 4rem;
+  }
+}
