@@ -164,17 +164,15 @@
 
     transition: var(--transition-base);
   }
-
-  /* Hover State */
-  &:hover {
-    color: var(--text-color-secondary);
-  }
-
-  &:hover::before {
-    right: -1.25rem;
-  }
+}
+/* Hover State */
+a:has(.c-more-link):hover .c-more-link {
+  color: var(--text-color-secondary);
 }
 
+a:has(.c-more-link):hover .c-more-link::before {
+  right: -1.25rem;
+}
 /*-------------------------
   Card
 -------------------------*/

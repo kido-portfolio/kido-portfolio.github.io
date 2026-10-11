@@ -141,7 +141,7 @@
     width: 100%;
 
     padding-block: 2rem;
-    padding-inline: 1rem;
+    padding-inline: 1rem 3rem;
 
     background-color: var(--bg-color-primary);
 
@@ -169,6 +169,7 @@
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: flex-end;
   }
 }
 

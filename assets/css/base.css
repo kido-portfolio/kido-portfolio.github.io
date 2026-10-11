@@ -65,3 +65,7 @@ img {
   height: auto;
   /* vertical-align: bottom; */
 }
+
+address {
+  font-style: normal;
+}
