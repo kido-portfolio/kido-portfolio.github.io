@@ -133,52 +133,81 @@
   More Link
 -------------------------*/
 .c-more-link {
+  --arrow-gap: 1.125rem;
+  --arrow-width: 0.75rem;
+  --arrow-shift: 0.125rem;
+
   display: inline-block;
   position: relative;
 
   font-size: 0.75rem;
   line-height: 1.5rem;
   color: var(--text-color-primary);
+  font-family: 'JetBrains Mono', sans-serif;
+
   text-transform: uppercase;
+  text-decoration: none;
   transition: var(--transition-base);
 
+  /* 矢印 */
   &::before {
     position: absolute;
-    content: '→';
+    right: calc(var(--arrow-gap) * -1);
+    width: var(--arrow-width);
 
-    right: -1.125rem;
-    width: 0.75rem;
+    content: '→';
+    content: '→' / '';
 
     transition: var(--transition-base);
   }
 
+  /* 下線 */
   &::after {
     position: absolute;
-    content: '';
     left: 0;
-    bottom: 0.25rem;
+    bottom: 0.25em;
 
-    width: calc(100% + 1.125rem);
+    width: calc(100% + var(--arrow-gap));
     height: 1px;
-    background-color: var(--text-color-primary);
+    background-color: currentColor;
 
+    content: '';
     transition: var(--transition-base);
   }
 }
-/* Hover State */
-a:has(.c-more-link):hover .c-more-link {
+
+/* Hover / Focus */
+.c-more-link:is(a):is(:hover, :focus-visible),
+a:is(:hover, :focus-visible) .c-more-link {
   color: var(--text-color-secondary);
 }
 
-a:has(.c-more-link):hover .c-more-link::before {
-  right: -1.25rem;
+.c-more-link:is(a):is(:hover, :focus-visible)::before,
+a:is(:hover, :focus-visible) .c-more-link::before {
+  transform: translateX(var(--arrow-shift));
 }
+
+/* キーボード操作時のフォーカスリング(単体リンク用) */
+.c-more-link:is(a):focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* 動きを減らす設定のユーザー向け */
+@media (prefers-reduced-motion: reduce) {
+  .c-more-link,
+  .c-more-link::before,
+  .c-more-link::after {
+    transition: none;
+  }
+}
+
 /*-------------------------
   Card
 -------------------------*/
 .c-card {
   width: 100%;
-  box-shadow: inset 0 0 0 1px #e2e2dd;
+  box-shadow: inset 0 0 0 1px var(--border-color-primary);
 }
 
 .c-card__body {
@@ -187,6 +216,11 @@ a:has(.c-more-link):hover .c-more-link::before {
 
 .c-card__meta {
   margin-block-end: 0.75rem;
+}
+
+.c-card__date,
+.c-card__category {
+  font-size: 0.688rem;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -250,6 +284,59 @@ a:has(.c-more-link):hover .c-more-link::before {
 /* Hover State */
 .c-breadcrumb__item:hover .c-breadcrumb__link {
   opacity: 0.6;
+}
+
+/*-------------------------
+  Filter
+-------------------------*/
+.c-filter-nav__list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.c-filter-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2.25rem;
+  padding-inline: 1rem;
+  background-color: var(--bg-color-primary);
+  box-shadow: inset 0 0 0 1px var(--border-color-primary);
+  border-radius: 2px;
+
+  transition: var(--transition-base);
+
+  &:has(.is-active),
+  &:hover {
+    background-color: var(--bg-color-thirdly);
+  }
+
+  &:hover .c-filter-nav__button {
+    color: var(--text-color-thirdly);
+  }
+}
+
+.c-filter-nav__button {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', sans-serif;
+
+  transition: var(--transition-base);
+
+  &.is-active {
+    color: var(--text-color-thirdly);
+  }
+}
+
+/* いずれかの項目をホバー中は、ホバーしていないアクティブ項目の強調を解除 */
+.c-filter-nav__list:has(.c-filter-nav__item:hover) .c-filter-nav__item:has(.is-active):not(:hover) {
+  background-color: var(--bg-color-primary);
+}
+
+.c-filter-nav__list:has(.c-filter-nav__item:hover) .c-filter-nav__item:not(:hover) .c-filter-nav__button.is-active {
+  color: inherit;
 }
 
 /* ============================

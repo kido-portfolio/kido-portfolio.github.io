@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works - Portfolio</title>
+  <meta name="description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <!-- OGP -->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shiori Kido | Portfolio">
+  <meta property="og:title" content="Shiori Kido | Portfolio">
+  <meta property="og:description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/images/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/resets.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/works.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script type="module" src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__top">
+        <div class="l-header__title">
+          <a href="./index.html" class="l-header__link">
+            <img src="./assets/images/logo.png" width="28" height="28" alt="" class="l-header__icon">
+            <span class="l-header__logo-text">Shiori Kido</span>
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <button id="js-hamburger-button" class="c-hamburger-menu__button" aria-label="メニュー" aria-expanded="false">
+          <span class="c-hamburger-menu__line"></span>
+        </button>
+
+      </div><!-- /.l-header__top -->
+
+      <!-- Drawer Menu -->
+      <div id="js-drawer-menu" class="c-drawer-menu">
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a lang="en" href="./" class="c-nav__link">Home</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./about.html" class="c-nav__link">About</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./" class="c-nav__link" aria-current="page">Works</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./contact.html" class="c-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.c-drawer-menu -->
+    </div><!-- /.l-header__inner -->
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="l-main p-works">
+    <!-- Contents Header-->
+    <div class="c-page-header p-works__header">
+      <div class="l-container">
+        <!-- Breadcrumb -->
+        <nav class="c-breadcrumb" aria-label="パンくず">
+          <ol lang="en" class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
+            </li>
+            <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">Works</li>
+          </ol>
+        </nav>
+        <h1 class="c-page-title p-works__title">作品紹介</h1>
+      </div><!-- /.l-container -->
+    </div><!-- /.c-page-header -->
+
+    <!-- Filter -->
+    <div class="l-container">
+      <nav class="c-filter-nav p-works__filter-nav" aria-label="制作実績の絞り込み">
+        <h2 class="u-sr-only">絞り込みナビゲーション</h2>
+        <ul class="c-filter-nav__list">
+          <li class="c-filter-nav__item">
+            <button
+              type="button"
+              class="c-filter-nav__button is-active"
+              data-filter="all"
+              aria-pressed="true">
+              All
+            </button>
+          </li>
+          <li class="c-filter-nav__item">
+            <button
+              type="button"
+              class="c-filter-nav__button"
+              data-filter="website"
+              aria-pressed="false">
+              Website
+            </button>
+          </li>
+          <li class="c-filter-nav__item">
+            <button
+              type="button"
+              class="c-filter-nav__button"
+              data-filter="landing-page"
+              aria-pressed="false">
+              Landing Page
+            </button>
+          </li>
+          <li class="c-filter-nav__item">
+            <button
+              type="button"
+              class="c-filter-nav__button"
+              data-filter="ui"
+              aria-pressed="false">
+              UI
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /.l-container -->
+
+    <!-- Works Contents -->
+    <section class="p-works__content">
+      <h2 class="u-sr-only">作品リスト</h2>
+      <div class="l-container">
+        <ul class="p-works__list">
+          <li class="p-works__item">
+            <a href="" class="c-card p-works__card">
+              <div class="c-card__image p-works__card-image">
+                <img src="./assets/images/placeholder.png" width="586" height="340" alt="" class="c-card__img p-works__card-img">
+              </div><!-- /.p-works__card-image -->
+              <div class="c-card__body p-works__card-body">
+                <div class="c-card__meta p-works__card-meta">
+                  <time datetime="2026-01-01" class="c-card__date p-works__card-date">01 · 2026</time>
+                  <span class="c-card__category p-works__card-category">Website · 架空案件</span>
+                </div>
+                <h3 class="c-card__title p-works__card-title">京都 町家カフェ サイト</h3>
+                <p class="c-card__desc p-works__card-desc">概要文が2〜3行入ります。課題とアプローチの要約をここに書きます。</p>
+                <span class="c-more-link">View case</span>
+              </div><!-- /.p-works__card-body -->
+            </a>
+          </li>
+        </ul>
+      </div><!-- /.l-container -->
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="l-footer">
+    <div class="l-container">
+
+      <div class="l-footer__main">
+
+        <!-- Profile -->
+        <div class="l-footer__profile">
+          <div class="l-footer__profile-logo">
+            <img src="./assets/images/logo.png" width="28" height="28" class="l-footer__profile-logo-img" aria-hidden="true">
+            <span class="l-footer__profile-name">Shiori Kido</span>
+          </div><!-- /.l-footer__profile-logo -->
+          <p class="l-footer__profile-description">
+						Web Corder based in Miyazaki.<br>
+						Portfolio v1.0
+					</p>
+        </div>
+
+        <div class="l-footer__columns">
+          <h2 class="u-sr-only">フッター情報</h2>
+
+          <!-- Navigation -->
+          <nav class="l-footer__nav-column l-footer__nav-column--navigation">
+            <h3 lang="en" class="l-footer__nav-heading">Navigation</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Home</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">About</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works.html" class="l-footer__nav-link">Works</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Social -->
+          <nav class="l-footer__nav-column l-footer__nav-column--social">
+            <h3 lang="en" class="l-footer__nav-heading">Social</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Twitter / X</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">Instagram</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works.html" class="l-footer__nav-link">Behance</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Note</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Contact -->
+          <section class="l-footer__contact l-footer__nav-column--contact">
+            <h3 lang="en" class="l-footer__nav-heading">Contact</h3>
+            <address class="l-footer__nav-column">
+              <dl class="l-footer__nav-list">
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Mail</dt>
+                  <dd class="l-footer__nav-item-value">kido.s2706@gmail.com</dd>
+                </div>
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Address</dt>
+                  <dd class="l-footer__nav-item-valuea">Miyazaki City, Miyazaki</dd>
+                </div>
+              </dl>
+            </address><!-- /.l-footer__nav-column -->
+          </section>
+
+        </div><!-- /.l-footer__columns -->
+      </div><!-- /.l-footer__main -->
+
+      <div class="l-footer__bottom">
+        <!-- Copyright -->
+        <small class="l-footer__copyright">&copy; 2026 Shiori Kido. All rights reserved. </small>
+      </div><!-- /.l-footer__bottom -->
+
+    </div><!-- /.l-container -->
+
+  </footer>
+
+</body>
+</html>
