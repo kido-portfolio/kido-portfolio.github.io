@@ -169,3 +169,77 @@
 .p-about-skills__tool-desc {
   color: #8a8a86;
 }
+
+/*-------------------------
+  Career
+-------------------------*/
+.p-about-career {
+  & .l-container {
+    padding-block: 6rem;
+  }
+}
+
+.p-about-career__header {
+  margin-block-end: 3rem;
+}
+
+.p-about-career__history {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.p-about-career__item {
+  display: grid;
+  grid-template-columns: minmax(auto, 200px) 1fr;
+  gap: 3rem;
+
+  height: 6.25rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    height: auto;
+
+    border-top: 1px solid var(--border-color-primary);
+  }
+}
+
+.p-about-career__item-date {
+  padding-block-start: 1.25rem;
+
+  border-top: 1px solid var(--border-color-primary);
+
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', sans-serif;
+  color: #111;
+
+  @media screen and (max-width: 768px) {
+    border-top: none;
+  }
+}
+
+.p-about-career__item-content {
+  padding-block-start: 1.25rem;
+
+  border-top: 1px solid var(--border-color-primary);
+
+  @media screen and (max-width: 768px) {
+    padding-block-start: 0;
+    border-top: none;
+  }
+}
+
+.p-about-career__item-label {
+  margin-block-end: 0.5rem;
+
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.p-about-career__item-desc {
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
