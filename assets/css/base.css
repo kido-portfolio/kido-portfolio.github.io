@@ -7,11 +7,11 @@
   --text-color-footer-nav: #eee;
   --text-color-button: #111;
 
+  --bg-color-body: #fafaf8;
   --bg-color-header: #fff;
   --bg-color-hero: #d8d8d8;
   --bg-color-footer: #111;
   --bg-color-primary: #fff;
-  --bg-color-secondary: #fafaf8;
   --bg-color-thirdly: #111;
 
   --border-color-primary: #e2e2dd;
@@ -21,7 +21,10 @@
 }
 
 body {
+  margin: 0;
   padding-block-start: 5rem;
+
+  background-color: var(--bg-color-body);
 
   font-family: 'Noto Sans JP', sans-serif;
   color: var(--text-color-body);
@@ -70,4 +73,15 @@ img {
 
 address {
   font-style: normal;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-block: 0;
 }

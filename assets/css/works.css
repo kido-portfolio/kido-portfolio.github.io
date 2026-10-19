@@ -84,3 +84,111 @@
     right: 1.15rem;
   }
 }
+
+/* ============================
+*  Works Case
+* ========================== */
+.p-works-case__header {
+  margin-block: 6rem 4rem;
+}
+
+.p-works-case__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1.5rem;
+  }
+}
+
+.p-works-case__label {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  color: var(--text-color-secondary);
+  font-family: 'JetBrains Mono', san-serif;
+  text-transform: uppercase;
+}
+
+.p-works-case__value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-color-primary);
+  text-transform: uppercase;
+}
+
+.p-works-case__image {
+  overflow: hidden;
+
+  max-width: 2880px;
+  width: 100%;
+  height: 720px;
+
+  margin-inline: auto;
+
+  @media screen and (max-width: 767px) {
+    height: 100dvh;
+  }
+}
+
+.p-works-case__img {
+  aspect-ratio: 2 / 1;
+  object-position: center;
+
+  @media screen and (max-width: 767px) {
+    aspect-ratio: 375 / 812;
+  }
+}
+
+.p-works-steps__item {
+  padding-block: 6rem;
+
+  & .l-container {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 750px);
+    gap: clamp(2rem, 5.86vw, 5rem);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.p-works-steps__item:nth-of-type(even) {
+  background-color: var(--bg-color-primary);
+}
+
+.p-works-steps__number {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 0.688rem;
+  letter-spacing: 0.103em;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+}
+
+.p-works-steps__title {
+  font-size: clamp(1.5rem, 2.34vw, 2rem);
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--text-color-primary);
+}
+
+.p-works-steps__summary {
+  margin-block-end: 1.5rem;
+
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--text-color-primary);
+}
+
+.p-works-steps__text {
+  font-size: 0.938rem;
+  line-height: 1.9;
+
+  & + & {
+    margin-block-start: 1rem;
+  }
+}

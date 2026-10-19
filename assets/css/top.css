@@ -105,7 +105,6 @@
 *  Works
 * ========================== */
 .p-top-works {
-  background-color: var(--bg-color-secondary);
 
   & .l-container {
     padding-block: 6rem;
@@ -147,7 +146,7 @@
   }
 
   & .c-section-title__ja {
-    color: var(--bg-color-secondary);
+    color: var(--bg-color-body);
   }
 
   & .c-button {

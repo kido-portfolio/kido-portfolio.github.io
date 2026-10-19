@@ -73,8 +73,10 @@
 -------------------------*/
 .l-footer__columns {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -83,17 +85,16 @@
       'contact contact';
   }
 }
-
-.l-footer__nav-column--navigation {
-  grid-area: nav;
-}
-
-.l-footer__nav-column--social {
-  grid-area: social;
-}
-
-.l-footer__nav-column--contact {
-  grid-area: contact;
+@media screen and (max-width: 768px) {
+  .l-footer__nav-column--navigation {
+    grid-area: nav;
+  }
+  .l-footer__nav-column--social {
+    grid-area: social;
+  }
+  .l-footer__nav-column--contact {
+    grid-area: contact;
+  }
 }
 
 .l-footer__nav-heading {
