@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Kido</title>
+  <meta name="description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <!-- OGP -->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shiori Kido | Portfolio">
+  <meta property="og:title" content="Shiori Kido | Portfolio">
+  <meta property="og:description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/images/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/resets.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script type="module" src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__top">
+        <h1 class="l-header__title">
+					<a  href="./" class="l-header__link">
+						<img src="./assets/images/logo.png" width="28" height="28" alt="" class="l-header__icon">
+						<span class="l-header__logo-text">Shiori Kido</span>
+					</a>
+				</h1>
+
+        <!-- Hamburger Menu Icon -->
+        <button id="js-hamburger-button" class="c-hamburger-menu__button" aria-label="メニュー" aria-expanded="false">
+          <span class="c-hamburger-menu__line"></span>
+        </button>
+
+      </div><!-- /.l-header__top -->
+
+      <!-- Drawer Menu -->
+      <div id="js-drawer-menu" class="c-drawer-menu">
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a lang="en" href="./index.html" class="c-nav__link" aria-current="page">Home</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./about.html" class="c-nav__link">About</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./works/index.html" class="c-nav__link">Works</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./" class="c-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.c-drawer-menu -->
+    </div><!-- /.l-header__inner -->
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="l-main p-contact">
+    <div class="l-container">
+      <!-- Page Header -->
+      <div class="c-page-header p-contact__header">
+        <div class="l-container">
+          <!-- Breadcrumb -->
+          <nav class="c-breadcrumb" aria-label="パンくず">
+            <ol lang="en" class="c-breadcrumb__list">
+              <li class="c-breadcrumb__item">
+                <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
+              </li>
+              <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+          <h1 class="c-page-title p-contact__title">
+            ご覧いただき<br>
+            ありがとうございます。
+          </h1>
+        </div><!-- /.l-container -->
+      </div><!-- /.c-page-header -->
+      <p class="p-contact__desc">
+        ご相談などは、フォームまたは以下の連絡先までお気軽にどうぞ。<br>
+        24〜48時間以内に返信いたします。
+      </p>
+      <dl class="p-contact__list">
+        <!-- E-mail -->
+        <div class="p-contact__item">
+          <dt class="p-contact__label">E-mail</dt>
+          <dd class="p-contact__value">kido.s2706@gmail.com</dd>
+        </div>
+        <!-- Location -->
+        <div class="p-contact__item">
+          <dt class="p-contact__label">Location</dt>
+          <dd class="p-contact__value">Miyazaki, Japan</dd>
+        </div>
+        <!-- Github -->
+        <div class="p-contact__item">
+          <dt class="p-contact__label">Github</dt>
+          <dd class="p-contact__value">
+            <a href="https://github.com/" class="p-contact__link">https://github.com/</a>
+          </dd>
+        </div>
+      </dl>
+      <div class="p-contact__form-wrapper">
+        <form action="" method="post" class="p-contact__form">
+          <h2 class="p-contact__title">お問い合わせフォーム</h2>
+          <!-- お名前 -->
+          <div class="p-contact__form-item">
+            <label for="your-name" class="p-contact__form-label">
+              お名前
+            </label>
+            <div class="p-contact__form-value">
+              <input
+                type="text"
+                name="your-name"
+                id="your-name"
+                placeholder="山田 太郎"
+                autocomplete="name"
+                required>
+            </div>
+          </div>
+          <!-- メールアドレス -->
+          <div class="p-contact__form-item">
+            <label for="your-mali" class="p-contact__form-label">
+              メールアドレス
+            </label>
+            <div class="p-contact__form-value">
+              <input
+                type="email"
+                name="your-mali"
+                id="your-mali"
+                placeholder="sample@example.com"
+                autocomplete="email"
+                required>
+            </div>
+          </div>
+          <!-- 会社名 (任意) -->
+          <div class="p-contact__form-item">
+            <label for="your-company" class="p-contact__form-label">
+              会社名 (任意)
+            </label>
+            <div class="p-contact__form-value">
+              <input
+                type="text"
+                name="your-company"
+                id="your-company"
+                placeholder="株式会社〇〇"
+                autocomplete="organization">
+            </div>
+          </div>
+          <!-- 件名 -->
+          <div class="p-contact__form-item">
+            <label for="subject" class="p-contact__form-label">
+              件名
+            </label>
+            <div class="p-contact__form-value">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                required>
+            </div>
+          </div>
+          <!-- 問い合わせ内容 -->
+          <div class="p-contact__form-item">
+            <label for="inquiry" class="p-contact__form-label">
+              問い合わせ内容
+            </label>
+            <div class="p-contact__form-value">
+              <textarea
+                name="inquiry"
+                id="inquiry"
+                rows="6"
+                placeholder="お問い合わせ内容をご記入ください"
+                required></textarea>
+            </div>
+          </div>
+          <!-- 送信 -->
+          <input type="submit" value="送信する" class="c-button p-contact__form-submit">
+        </form>
+      </div><!-- /.p-contact__form-wrapper -->
+    </div><!-- /.l-container -->
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="l-footer">
+    <div class="l-container">
+
+      <div class="l-footer__main">
+
+        <!-- Profile -->
+        <div class="l-footer__profile">
+          <div class="l-footer__profile-logo">
+            <img src="./assets/images/logo.png" width="28" height="28" class="l-footer__profile-logo-img" aria-hidden="true">
+            <span class="l-footer__profile-name">Shiori Kido</span>
+          </div><!-- /.l-footer__profile-logo -->
+          <p class="l-footer__profile-description">
+						Web Corder based in Miyazaki.<br>
+						Portfolio v1.0
+					</p>
+        </div>
+
+        <div class="l-footer__columns">
+          <h2 class="u-sr-only">フッター情報</h2>
+
+          <!-- Navigation -->
+          <nav class="l-footer__nav-column l-footer__nav-column--navigation">
+            <h3 lang="en" class="l-footer__nav-heading">Navigation</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Home</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">About</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works/index.html" class="l-footer__nav-link">Works</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Social -->
+          <nav class="l-footer__nav-column l-footer__nav-column--social">
+            <h3 lang="en" class="l-footer__nav-heading">Social</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Twitter / X</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">Instagram</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works/" class="l-footer__nav-link">Behance</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Note</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Contact -->
+          <section class="l-footer__contact l-footer__nav-column--contact">
+            <h3 lang="en" class="l-footer__nav-heading">Contact</h3>
+            <address class="l-footer__nav-column">
+              <dl class="l-footer__nav-list">
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Mail</dt>
+                  <dd class="l-footer__nav-item-value">kido.s2706@gmail.com</dd>
+                </div>
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Address</dt>
+                  <dd class="l-footer__nav-item-valuea">Miyazaki City, Miyazaki</dd>
+                </div>
+              </dl>
+            </address><!-- /.l-footer__nav-column -->
+          </section>
+
+        </div><!-- /.l-footer__columns -->
+      </div><!-- /.l-footer__main -->
+
+      <div class="l-footer__bottom">
+        <!-- Copyright -->
+        <small class="l-footer__copyright">&copy; 2026 Shiori Kido. All rights reserved. </small>
+      </div><!-- /.l-footer__bottom -->
+
+    </div><!-- /.l-container -->
+
+  </footer>
+
+</body>
+</html>

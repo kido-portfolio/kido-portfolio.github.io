@@ -1,0 +1,154 @@
+/* ============================
+*  Contact
+* ========================== */
+.p-contact {
+  & > .l-container {
+    display: grid;
+    grid-template-columns: 45.67% 1fr;
+    grid-template-areas:
+      'header form'
+      'desc   form'
+      'list   form';
+
+    padding-block: 6rem 7.5rem;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+
+      grid-template-areas:
+        'header'
+        'desc '
+        'list '
+        'form';
+      row-gap: 2rem;
+    }
+  }
+
+  & .c-page-title {
+    font-size: clamp(1.5rem, 3.51vw, 3rem);
+  }
+}
+
+.p-contact__header {
+  grid-area: header;
+}
+
+.p-contact__desc {
+  grid-area: desc;
+
+  font-size: 0.938rem;
+  line-height: 1.9;
+}
+
+.p-contact__list {
+  grid-area: list;
+}
+
+.p-contact__form-wrapper {
+  grid-area: form;
+
+  padding: 3rem;
+
+  background-color: var(--bg-color-primary);
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.p-contact__list {
+  padding-inline-end: clamp(2rem, 5.86vw, 5rem);
+}
+
+.p-contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-block: 1rem;
+
+  border-top: 1px solid var(--border-color-primary);
+
+  &:last-of-type {
+    border-bottom: 1px solid var(--border-color-primary);
+  }
+}
+
+.p-contact__label {
+  font-size: 0.688rem;
+  letter-spacing: 0.069em;
+  color: var(--text-color-secondary);
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+.p-contact__value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-color-primary);
+}
+
+.p-contact__title {
+  margin-block-end: 1.5rem;
+}
+
+.p-contact__form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+
+  & + & {
+    margin-block-start: 1.25rem;
+  }
+
+  &:last-of-type {
+    margin-block-end: 2.25rem;
+  }
+}
+
+.p-contact__form-label {
+  font-size: 0.625rem;
+  color: var(--text-color-secondary);
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+.p-contact__form-value {
+  & input,
+  & textarea {
+    padding-block: 0.875rem;
+    padding-inline: 1rem;
+
+    box-shadow: inset 0 0 0 1px var(--border-color-primary);
+
+    font-size: 0.813rem;
+    color: #111;
+  }
+
+  & textarea {
+    width: 100%;
+    min-height: 7.5rem;
+    resize: vertical;
+  }
+}
+
+.p-contact__form-submit {
+  width: 100%;
+
+  background-color: var(--bg-color-thirdly);
+
+  box-shadow: inset 0 0 0 2px var(--bg-color-thirdly);
+
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-color-thirdly);
+
+  cursor: pointer;
+
+  transition: var(--transition-base);
+
+  &:hover {
+    background-color: var(--bg-color-primary);
+
+    color: var(--bg-color-thirdly);
+  }
+}

@@ -1,4 +1,8 @@
 :root {
+  /*-------------------------
+    Color
+  -------------------------*/
+  /* Text */
   --text-color-primary: #0a0a0a;
   --text-color-secondary: #8a8a86;
   --text-color-thirdly: #fff;
@@ -7,6 +11,7 @@
   --text-color-footer-nav: #eee;
   --text-color-button: #111;
 
+  /* Background */
   --bg-color-body: #fafaf8;
   --bg-color-header: #fff;
   --bg-color-hero: #d8d8d8;
@@ -14,8 +19,12 @@
   --bg-color-primary: #fff;
   --bg-color-thirdly: #111;
 
+  /* Border */
   --border-color-primary: #e2e2dd;
 
+  /*-------------------------
+    Transition
+  -------------------------*/
   --transition-base: 0.2s ease;
   --transition-slow: 0.4s ease;
 }
@@ -84,4 +93,20 @@ dd {
 
 h1 {
   margin-block: 0;
+}
+
+input[type='submit'] {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  border: none;
 }
