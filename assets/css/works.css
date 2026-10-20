@@ -6,10 +6,12 @@
 }
 
 .p-works__filter-nav {
+  width: 100%;
   padding-block-end: 3.563rem;
 }
 
 .p-works__content {
+  width: 100%;
   padding-block: 2rem 6rem;
 }
 
