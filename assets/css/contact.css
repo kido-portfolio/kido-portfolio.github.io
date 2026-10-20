@@ -2,26 +2,30 @@
 *  Contact
 * ========================== */
 .p-contact {
-  & > .l-container {
-    display: grid;
-    grid-template-columns: 45.67% 1fr;
+  display: grid;
+  grid-template-columns: 45.67% 1fr;
+  grid-template-areas:
+    'header form'
+    'desc   form'
+    'list   form';
+
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 6rem 7.5rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+
     grid-template-areas:
-      'header form'
-      'desc   form'
-      'list   form';
+      'header'
+      'desc '
+      'list '
+      'form';
+    row-gap: 2rem;
 
-    padding-block: 6rem 7.5rem;
-
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-
-      grid-template-areas:
-        'header'
-        'desc '
-        'list '
-        'form';
-      row-gap: 2rem;
-    }
+    max-width: 100%;
+    padding-inline: 1.25rem;
   }
 
   & .c-page-title {
@@ -42,6 +46,11 @@
 
 .p-contact__list {
   grid-area: list;
+  padding-inline-end: clamp(2rem, 5.86vw, 5rem);
+
+  @media screen and (max-width: 768px) {
+    padding-inline-end: 0;
+  }
 }
 
 .p-contact__form-wrapper {
@@ -54,10 +63,6 @@
   @media screen and (max-width: 768px) {
     padding: 1rem;
   }
-}
-
-.p-contact__list {
-  padding-inline-end: clamp(2rem, 5.86vw, 5rem);
 }
 
 .p-contact__item {

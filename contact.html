@@ -79,127 +79,127 @@
 
   <!-- ===== Main ===== -->
   <main class="l-main p-contact">
-    <div class="l-container">
-      <!-- Page Header -->
-      <div class="c-page-header p-contact__header">
-        <div class="l-container">
-          <!-- Breadcrumb -->
-          <nav class="c-breadcrumb" aria-label="パンくず">
-            <ol lang="en" class="c-breadcrumb__list">
-              <li class="c-breadcrumb__item">
-                <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
-              </li>
-              <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">Contact</li>
-            </ol>
-          </nav>
-          <h1 class="c-page-title p-contact__title">
+
+    <!-- Page Header -->
+    <div class="c-page-header p-contact__header">
+      <div class="l-container">
+        <!-- Breadcrumb -->
+        <nav class="c-breadcrumb" aria-label="パンくず">
+          <ol lang="en" class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
+            </li>
+            <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <h1 class="c-page-title p-contact__title">
             ご覧いただき<br>
             ありがとうございます。
           </h1>
-        </div><!-- /.l-container -->
-      </div><!-- /.c-page-header -->
-      <p class="p-contact__desc">
+      </div><!-- /.l-container -->
+    </div><!-- /.c-page-header -->
+
+    <p class="p-contact__desc">
         ご相談などは、フォームまたは以下の連絡先までお気軽にどうぞ。<br>
         24〜48時間以内に返信いたします。
       </p>
-      <dl class="p-contact__list">
-        <!-- E-mail -->
-        <div class="p-contact__item">
-          <dt class="p-contact__label">E-mail</dt>
-          <dd class="p-contact__value">kido.s2706@gmail.com</dd>
+    <dl class="p-contact__list">
+      <!-- E-mail -->
+      <div class="p-contact__item">
+        <dt class="p-contact__label">E-mail</dt>
+        <dd class="p-contact__value">kido.s2706@gmail.com</dd>
+      </div>
+      <!-- Location -->
+      <div class="p-contact__item">
+        <dt class="p-contact__label">Location</dt>
+        <dd class="p-contact__value">Miyazaki, Japan</dd>
+      </div>
+      <!-- Github -->
+      <div class="p-contact__item">
+        <dt class="p-contact__label">Github</dt>
+        <dd class="p-contact__value">
+          <a href="https://github.com/" class="p-contact__link">https://github.com/</a>
+        </dd>
+      </div>
+    </dl>
+    <div class="p-contact__form-wrapper">
+      <form action="" method="post" class="p-contact__form">
+        <h2 class="p-contact__title">お問い合わせフォーム</h2>
+        <!-- お名前 -->
+        <div class="p-contact__form-item">
+          <label for="your-name" class="p-contact__form-label">
+            お名前
+          </label>
+          <div class="p-contact__form-value">
+            <input
+              type="text"
+              name="your-name"
+              id="your-name"
+              placeholder="山田 太郎"
+              autocomplete="name"
+              required>
+          </div>
         </div>
-        <!-- Location -->
-        <div class="p-contact__item">
-          <dt class="p-contact__label">Location</dt>
-          <dd class="p-contact__value">Miyazaki, Japan</dd>
+        <!-- メールアドレス -->
+        <div class="p-contact__form-item">
+          <label for="your-mali" class="p-contact__form-label">
+            メールアドレス
+          </label>
+          <div class="p-contact__form-value">
+            <input
+              type="email"
+              name="your-mali"
+              id="your-mali"
+              placeholder="sample@example.com"
+              autocomplete="email"
+              required>
+          </div>
         </div>
-        <!-- Github -->
-        <div class="p-contact__item">
-          <dt class="p-contact__label">Github</dt>
-          <dd class="p-contact__value">
-            <a href="https://github.com/" class="p-contact__link">https://github.com/</a>
-          </dd>
+        <!-- 会社名 (任意) -->
+        <div class="p-contact__form-item">
+          <label for="your-company" class="p-contact__form-label">
+            会社名 (任意)
+          </label>
+          <div class="p-contact__form-value">
+            <input
+              type="text"
+              name="your-company"
+              id="your-company"
+              placeholder="株式会社〇〇"
+              autocomplete="organization">
+          </div>
         </div>
-      </dl>
-      <div class="p-contact__form-wrapper">
-        <form action="" method="post" class="p-contact__form">
-          <h2 class="p-contact__title">お問い合わせフォーム</h2>
-          <!-- お名前 -->
-          <div class="p-contact__form-item">
-            <label for="your-name" class="p-contact__form-label">
-              お名前
-            </label>
-            <div class="p-contact__form-value">
-              <input
-                type="text"
-                name="your-name"
-                id="your-name"
-                placeholder="山田 太郎"
-                autocomplete="name"
-                required>
-            </div>
+        <!-- 件名 -->
+        <div class="p-contact__form-item">
+          <label for="subject" class="p-contact__form-label">
+            件名
+          </label>
+          <div class="p-contact__form-value">
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              required>
           </div>
-          <!-- メールアドレス -->
-          <div class="p-contact__form-item">
-            <label for="your-mali" class="p-contact__form-label">
-              メールアドレス
-            </label>
-            <div class="p-contact__form-value">
-              <input
-                type="email"
-                name="your-mali"
-                id="your-mali"
-                placeholder="sample@example.com"
-                autocomplete="email"
-                required>
-            </div>
+        </div>
+        <!-- 問い合わせ内容 -->
+        <div class="p-contact__form-item">
+          <label for="inquiry" class="p-contact__form-label">
+            問い合わせ内容
+          </label>
+          <div class="p-contact__form-value">
+            <textarea
+              name="inquiry"
+              id="inquiry"
+              rows="6"
+              placeholder="お問い合わせ内容をご記入ください"
+              required></textarea>
           </div>
-          <!-- 会社名 (任意) -->
-          <div class="p-contact__form-item">
-            <label for="your-company" class="p-contact__form-label">
-              会社名 (任意)
-            </label>
-            <div class="p-contact__form-value">
-              <input
-                type="text"
-                name="your-company"
-                id="your-company"
-                placeholder="株式会社〇〇"
-                autocomplete="organization">
-            </div>
-          </div>
-          <!-- 件名 -->
-          <div class="p-contact__form-item">
-            <label for="subject" class="p-contact__form-label">
-              件名
-            </label>
-            <div class="p-contact__form-value">
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                required>
-            </div>
-          </div>
-          <!-- 問い合わせ内容 -->
-          <div class="p-contact__form-item">
-            <label for="inquiry" class="p-contact__form-label">
-              問い合わせ内容
-            </label>
-            <div class="p-contact__form-value">
-              <textarea
-                name="inquiry"
-                id="inquiry"
-                rows="6"
-                placeholder="お問い合わせ内容をご記入ください"
-                required></textarea>
-            </div>
-          </div>
-          <!-- 送信 -->
-          <input type="submit" value="送信する" class="c-button p-contact__form-submit">
-        </form>
-      </div><!-- /.p-contact__form-wrapper -->
-    </div><!-- /.l-container -->
+        </div>
+        <!-- 送信 -->
+        <input type="submit" value="送信する" class="c-button p-contact__form-submit">
+      </form>
+    </div><!-- /.p-contact__form-wrapper -->
   </main>
 
   <!-- ===== Footer ===== -->
