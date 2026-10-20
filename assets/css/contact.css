@@ -28,8 +28,16 @@
     padding-inline: 1.25rem;
   }
 
+  & .c-page-header > .l-container {
+    padding-inline: 0;
+  }
+
   & .c-page-title {
     font-size: clamp(1.5rem, 3.51vw, 3rem);
+
+    @media screen and (max-width: 768px) {
+      margin-block-end: 0;
+    }
   }
 }
 
