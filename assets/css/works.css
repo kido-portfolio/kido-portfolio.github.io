@@ -126,7 +126,7 @@
 
   max-width: 2880px;
   width: 100%;
-  height: 720px;
+  height: 960px;
 
   margin-inline: auto;
 
@@ -136,12 +136,42 @@
 }
 
 .p-works-case__img {
-  aspect-ratio: 2 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   object-position: center;
+  aspect-ratio: 2 / 1;
 
   @media screen and (max-width: 767px) {
     aspect-ratio: 375 / 812;
   }
+}
+
+/* ===== SP screenshots ===== */
+.p-works-case__image--sp {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  height: auto; /* 親の 960px / 100dvh を解除 */
+  overflow: visible;
+  padding-block: 48px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-inline: 16px;
+    padding-block: 32px;
+  }
+}
+
+.p-works-case__img--sp {
+  width: min(375px, 100%);
+  height: auto;
+  aspect-ratio: 375 / 812; /* PC用の 2 / 1 を打ち消す。モバイルも同じ値 */
+  object-fit: contain;
+  border: 1px solid #e5e5e5;
 }
 
 .p-works-steps__item {

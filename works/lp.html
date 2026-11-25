@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Works | Portfolio</title>
+  <title>1Dayクリエイティブセミナー LP - Works | Portfolio</title>
   <meta name="description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
   <!-- OGP -->
   <meta property="og:locale" content="ja_JP">
@@ -26,8 +26,6 @@
   <link rel="stylesheet" href="../assets/css/footer.css">
   <link rel="stylesheet" href="../assets/css/works.css">
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -88,10 +86,10 @@
             <li class="c-breadcrumb__item">
               <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
             </li>
-            <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">Landing Page - Works</li>
+            <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">1Dayクリエイティブセミナー LP - Works</li>
           </ol>
         </nav>
-        <h1 class="c-page-title p-works-case__title">LP</h1>
+        <h1 class="c-page-title p-works-case__title">1Dayクリエイティブセミナー LP</h1>
 
         <dl class="p-works-case__meta">
           <div class="p-works-case__meta-item">
@@ -116,12 +114,18 @@
 
     <!-- Works Contents -->
     <section class="p-works-case__content">
-      <h2 class="u-sr-only">ランディングページ</h2>
+      <h2 class="u-sr-only">1Dayクリエイティブセミナー ランディングページ</h2>
 
       <!-- Image -->
       <div class="p-works-case__image">
-        <img src="https://placehold.jp/12/ECECE7/ffffff/2880x1440.png?text=%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E4%BD%9C%E5%93%81%E7%94%BB%E5%83%8F" alt="" class="p-works-case__img">
+        <img src="../assets/images/works/image-lp-pc.webp" alt="DESIGN CAMPUS 1Dayクリエイティブセミナーのランディングページ全体" class="p-works-case__img">
       </div><!-- /.p-works-case__image -->
+
+      <!-- Image (SP) -->
+      <div class="p-works-case__image--sp">
+        <img src="../assets/images/works/image-lp-sp.webp" width="375" height="812" alt="LPのスマートフォン表示（ファーストビュー）" class="p-works-case__img--sp" loading="lazy">
+        <img src="../assets/images/works/image-lp-case-sp.webp" width="375" height="812" alt="LPのスマートフォン表示（講座一覧）" class="p-works-case__img--sp" loading="lazy">
+      </div><!-- /.p-works-case__image-sp -->
 
       <section>
         <h3 class="u-sr-only">制作プロセス</h3>
@@ -135,13 +139,13 @@
               </div>
               <div class="p-works-steps__body">
                 <p class="p-works-steps__summary">
-                  制作の目的と実装要件を整理します。
+                  セミナーの申し込みにつなげるLPとして、目的と実装要件を整理します。
                 </p>
                 <p class="p-works-steps__text">
-                  ページ構成や各セクションの表示仕様を確認。
+                  ファーストビュー、お悩み、講座の特徴、講座一覧、開催場所、よくある質問、申し込みボタンなど、各セクションの表示仕様を確認。
                 </p>
                 <p class="p-works-steps__text">
-                  デザインカンプから必要な機能やレスポンシブ対応の要件を把握。
+                  デザインカンプから、申し込みへの導線やアコーディオン、Googleマップの埋め込み、レスポンシブ対応の要件を把握。
                 </p>
               </div>
             </div>
@@ -156,13 +160,13 @@
               </div>
               <div class="p-works-steps__body">
                 <p class="p-works-steps__summary">
-                  保守性と再利用性を意識して実装方法を検討します。
+                  初心者向けセミナーの内容が伝わりやすく、保守しやすい実装方法を検討します。
                 </p>
                 <p class="p-works-steps__text">
-                  セマンティックなHTMLとBEMをベースにしたCSS設計。
+                  セマンティックなHTMLとBEMをベースに、見出しやカード、申し込みボタンを再利用できるパーツとして設計。
                 </p>
                 <p class="p-works-steps__text">
-                  必要に応じてJavaScriptやWordPressの機能を活用。
+                  よくある質問の開閉など、動きが必要な部分のみJavaScriptで実装。
                 </p>
               </div>
             </div>
@@ -171,17 +175,18 @@
           <!-- 実装 / Development -->
           <li class="p-works-steps__item">
             <div class="l-container">
-              <div class="p-works-steps__header"><span class="p-works-steps__number">Step 03</span><h4 class="p-works-steps__title">実装</h4>
+              <div class="p-works-steps__header"><span class="p-works-steps__number">Step 03</span>
+                <h4 class="p-works-steps__title">実装</h4>
               </div>
               <div class="p-works-steps__body">
                 <p class="p-works-steps__summary">
-                  デザインをもとに、各ページと必要な機能を実装します。
+                  デザインをもとに、LP全体のレイアウトと各UIを実装します。
                 </p>
                 <p class="p-works-steps__text">
-                  HTML・CSSによるレイアウト構築とレスポンシブ対応。
+                  ヒーロー画像と見出し、お悩みチェックリスト、3カラムの特徴、講座一覧カードをHTML・CSSで構築し、レスポンシブに対応。
                 </p>
                 <p class="p-works-steps__text">
-                  JavaScriptによるUI制御やWordPressのテンプレート実装。
+                  よくある質問のアコーディオンや、開催場所のGoogleマップ埋め込みを実装。
                 </p>
               </div>
             </div>
@@ -199,10 +204,10 @@
                   表示と動作を確認し、品質を高めます。
                 </p>
                 <p class="p-works-steps__text">
-                  PC・スマートフォンでのレイアウトや表示崩れを確認。
+                  PC・スマートフォンで、3カラムや講座カードの折り返し、画像の見え方に崩れがないかを確認。
                 </p>
                 <p class="p-works-steps__text">
-                  機能の動作検証と修正を行い、実装上の課題や改善点を整理。
+                  アコーディオンの動作や申し込みボタンのリンク先を検証し、修正点や改善点を整理。
                 </p>
               </div>
             </div>
@@ -228,9 +233,9 @@
             <span class="l-footer__profile-name">Shiori Kido</span>
           </div><!-- /.l-footer__profile-logo -->
           <p class="l-footer__profile-description">
-						Web Corder based in Miyazaki.<br>
-						Portfolio v1.0
-					</p>
+            Web Corder based in Miyazaki.<br>
+            Portfolio v1.0
+          </p>
         </div>
 
         <div class="l-footer__columns">
