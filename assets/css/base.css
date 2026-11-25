@@ -1,0 +1,112 @@
+:root {
+  /*-------------------------
+    Color
+  -------------------------*/
+  /* Text */
+  --text-color-primary: #0a0a0a;
+  --text-color-secondary: #8a8a86;
+  --text-color-thirdly: #fff;
+  --text-color-body: #4a4a48;
+  --text-color-header: #111;
+  --text-color-footer-nav: #eee;
+  --text-color-button: #111;
+
+  /* Background */
+  --bg-color-body: #fafaf8;
+  --bg-color-header: #fff;
+  --bg-color-hero: #d8d8d8;
+  --bg-color-footer: #111;
+  --bg-color-primary: #fff;
+  --bg-color-thirdly: #111;
+
+  /* Border */
+  --border-color-primary: #e2e2dd;
+
+  /*-------------------------
+    Transition
+  -------------------------*/
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.4s ease;
+}
+
+body {
+  margin: 0;
+  padding-block-start: 5rem;
+
+  background-color: var(--bg-color-body);
+
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text-color-body);
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
+
+  @media screen and (max-width: 768px) {
+    padding-block-start: 3.5rem;
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:lang(en) {
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+address {
+  font-style: normal;
+}
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-block: 0;
+}
+
+input[type='submit'] {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  border: none;
+}

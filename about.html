@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Portfolio</title>
+  <meta name="description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <!-- OGP -->
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shiori Kido | Portfolio">
+  <meta property="og:title" content="Shiori Kido | Portfolio">
+  <meta property="og:description" content="城戸 志織（きど しおり）のポートフォリオサイトです。">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/images/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/resets.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/about.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- JS -->
+  <script type="module" src="./assets/js/main.js"></script>
+
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__top">
+        <div class="l-header__title">
+          <a href="./index.html" class="l-header__link">
+            <img src="./assets/images/logo.png" width="28" height="28" alt="" class="l-header__icon">
+            <span class="l-header__logo-text">Shiori Kido</span>
+          </a>
+        </div>
+
+        <!-- Hamburger Menu Icon -->
+        <button id="js-hamburger-button" class="c-hamburger-menu__button" aria-label="メニュー" aria-expanded="false">
+          <span class="c-hamburger-menu__line"></span>
+        </button>
+
+      </div><!-- /.l-header__top -->
+
+      <!-- Drawer Menu -->
+      <div id="js-drawer-menu" class="c-drawer-menu">
+        <nav class="c-nav">
+          <ul class="c-nav__list">
+            <li class="c-nav__item">
+              <a lang="en" href="./" class="c-nav__link">Home</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./" class="c-nav__link" aria-current="page">About</a>
+            </li>
+            <li class="c-nav__item">
+              <a href="./works/index.html" class="l-footer__nav-link">Works</a>
+            </li>
+            <li class="c-nav__item">
+              <a lang="en" href="./contact.html" class="c-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.c-drawer-menu -->
+    </div><!-- /.l-header__inner -->
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main class="l-main p-about">
+    <div class="c-page-header p-about__header">
+      <div class="l-container">
+        <!-- Breadcrumb -->
+        <nav class="c-breadcrumb" aria-label="パンくず">
+          <ol lang="en" class="c-breadcrumb__list">
+            <li class="c-breadcrumb__item">
+              <a href="http://cosmo-farm.local/" class="c-breadcrumb__link">Top</a>
+            </li>
+            <li class="c-breadcrumb__item c-breadcrumb__item--current" aria-current="page">About</li>
+          </ol>
+        </nav>
+        <h1 class="c-page-title p-about__title">
+          アクセシビリティを大切に、<br>
+          誰もが使えるWebを。
+        </h1>
+      </div><!-- /.l-container -->
+    </div><!-- /.c-page-header -->
+
+    <!-- Story -->
+    <section class="p-about-section p-about-story">
+      <div class="l-container">
+        <figure class="p-about-story__image">
+          <img src="./assets/images/placeholder-profile.png" alt="" class="p-about-story__img">
+          <figcaption>キド シオリ</figcaption>
+        </figure><!-- /.p-about-story__image -->
+        <div class="p-about-story__content">
+          <div class="c-section-header p-about-section__header">
+            <h2 class="c-section-title p-about-section__title">
+              <span lang="en" class="c-section-title__en">Story</span>
+              <span class="c-section-title__ja">はじめまして、<br class="u-sp-only">キド シオリ です。</span>
+            </h2>
+          </div><!-- /.c-section-header -->
+          <!-- TODO: 自己紹介文を考える -->
+          <div class="p-about-about__descs">
+            <p class="c-text">
+              趣味の旅行を通じて、様々な観光Webサイトや紙媒体のデザインに触れてきました。ユーザーが旅先で迷わず、その土地の魅力が伝わるサイトを作ることを目指しています。
+            </p>
+            <p class="c-text">
+              Figma / Illustrator / Photoshop を中心に、独学で2年間学び続けてきました。
+            </p>
+          </div><!-- /.p-about-about__desc -->
+        </div><!-- /.p-about-story__content -->
+      </div><!-- /.l-container -->
+    </section>
+
+    <!-- Skills -->
+    <section class="p-about-section p-about-skills">
+      <div class="l-container">
+
+        <div class="c-section-header p-about-section__header">
+          <h2 class="c-section-title p-about-section__title">
+              <span lang="en" class="c-section-title__en">skills・Tools</span>
+              <span class="c-section-title__ja">使えるツール</span>
+            </h2>
+        </div><!-- /.c-section-header -->
+
+        <div class="p-about-skills__detail">
+          <!-- HTML / CSS -->
+          <a href="./works/example/" class="p-about-skills__detail-section">
+            <h3 class="p-about-skills__detail-title">HTML / CSS</h3>
+            <p class="p-about-skills__detail-desc">セマンティックなHTML設計、BEMを用いたCSS設計、レスポンシブ対応が可能。デザインカンプをもとにしたWebサイトのコーディングや、既存サイトのスタイル調整に対応。</p>
+            <dl class="p-about-skills__level">
+              <dt class="p-about-skills__level-label">スキルレベル</dt>
+              <dd class="p-about-skills__level-value">実務経験あり</dd>
+            </dl>
+            <span class="c-more-link">HTML / CSSの制作実績</span>
+          </a>
+
+          <!-- JavaScript -->
+          <a href="" class="p-about-skills__detail-section">
+            <h3 class="p-about-skills__detail-title">JavaScript</h3>
+            <p class="p-about-skills__detail-desc">WebサイトのUI実装（ハンバーガーメニュー、アコーディオンなど）に対応。既存コードを活用した実装や、サイトの構造に応じた調整が可能。新しい動作や機能についても、AIを活用しながら実装・検証を行う。</p>
+            <dl class="p-about-skills__level">
+              <dt class="p-about-skills__level-label">スキルレベル</dt>
+              <dd class="p-about-skills__level-value">実務経験あり・継続学習中</dd>
+            </dl>
+            <span class="c-more-link">JavaScriptの制作実績</span>
+          </a>
+
+          <!-- WordPress / PHP -->
+          <a href="" class="p-about-skills__detail-section">
+            <h3 class="p-about-skills__detail-title">WordPress / PHP</h3>
+            <p class="p-about-skills__detail-desc">WordPressのオリジナルテーマ制作、テンプレートの実装、カスタム投稿タイプやカスタムフィールドの設定などを経験。プラグインを活用したお問い合わせフォームの構築や、投稿データを利用したページの実装にも対応。</p>
+            <dl class="p-about-skills__level">
+              <dt class="p-about-skills__level-label">スキルレベル</dt>
+              <dd class="p-about-skills__level-value">実装経験あり・継続学習中</dd>
+            </dl>
+            <span class="c-more-link">WordPressの制作実績</span>
+          </a>
+
+          <!-- Tools -->
+          <a href="" class="p-about-skills__detail-section">
+            <h3 class="p-about-skills__detail-title">Tools</h3>
+            <dl class="p-about-skills__tool-list">
+              <div class="p-about-skills__tool-item">
+                <dt class="p-about-skills__tool-name">Git / GitHub</dt>
+                <dd class="p-about-skills__tool-desc">ソースコードの管理</dd>
+              </div>
+              <div class="p-about-skills__tool-item">
+                <dt class="p-about-skills__tool-name">Local</dt>
+                <dd class="p-about-skills__tool-desc">ローカル環境でのWordPress開発</dd>
+              </div>
+              <div class="p-about-skills__tool-item">
+                <dt class="p-about-skills__tool-name">AI Tools</dt>
+                <dd class="p-about-skills__tool-desc">コードの調査、機能の実装支援、エラーの解決</dd>
+              </div>
+            </dl>
+            <span class="c-more-link">Git</span>
+          </a>
+        </div><!-- /.p-about-skills__detail -->
+      </div><!-- /.l-container -->
+    </section>
+
+    <!-- Career -->
+    <!-- TODO: 経歴を入れる -->
+    <section class="p-about-section p-about-career">
+      <div class="l-container">
+        <div class="c-section-header p-about-career__header">
+          <h2 class="c-section-title p-about-section__title">
+            <span lang="en" class="c-section-title__en">Career / Experience</span>
+            <span class="c-section-title__ja">経歴</span>
+        </h2>
+        </div><!-- /.c-section-header -->
+        <dl class="p-about-career__history">
+          <div class="p-about-career__item">
+            <dt class="p-about-career__item-date">2022.12 〜 2023.06</dt>
+            <dd class="p-about-career__item-content">
+              <p class="p-about-career__item-label">コーディング学習</p>
+              <p class="p-about-career__item-desc">宮崎市内の職業訓練校で、Webデザインやそれに関するツールの操作方法、デザインカンプからのコーディング等を学ぶ</p>
+            </dd>
+          </div>
+          <div class="p-about-career__item">
+            <dt class="p-about-career__item-date">2023.06</dt>
+            <dd class="p-about-career__item-content">
+              <p class="p-about-career__item-label">Web制作会社に就職</p>
+              <p class="p-about-career__item-desc">サーバー監視業務を担当しながら、WordPressやNext.jsを用いた開発案件にも携わる</p>
+            </dd>
+          </div>
+        </dl>
+      </div><!-- /.l-container -->
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="l-footer">
+    <div class="l-container">
+
+      <div class="l-footer__main">
+
+        <!-- Profile -->
+        <div class="l-footer__profile">
+          <div class="l-footer__profile-logo">
+            <img src="./assets/images/logo.png" width="28" height="28" class="l-footer__profile-logo-img" aria-hidden="true">
+            <span class="l-footer__profile-name">Shiori Kido</span>
+          </div><!-- /.l-footer__profile-logo -->
+          <p class="l-footer__profile-description">
+						Web Corder based in Miyazaki.<br>
+						Portfolio v1.0
+					</p>
+        </div>
+
+        <div class="l-footer__columns">
+          <h2 class="u-sr-only">フッター情報</h2>
+
+          <!-- Navigation -->
+          <nav class="l-footer__nav-column l-footer__nav-column--navigation">
+            <h3 lang="en" class="l-footer__nav-heading">Navigation</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Home</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">About</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works/" class="l-footer__nav-link">Works</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Social -->
+          <nav class="l-footer__nav-column l-footer__nav-column--social">
+            <h3 lang="en" class="l-footer__nav-heading">Social</h3>
+            <ul class="l-footer__nav-list">
+              <li class="l-footer__nav-item">
+                <a href="./" class="l-footer__nav-link">Twitter / X</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="about.html" class="l-footer__nav-link">Instagram</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./works.html" class="l-footer__nav-link">Behance</a>
+              </li>
+              <li class="l-footer__nav-item">
+                <a href="./contact.html" class="l-footer__nav-link">Note</a>
+              </li>
+            </ul>
+          </nav><!-- /.l-footer__nav-column -->
+
+          <!-- Contact -->
+          <section class="l-footer__contact l-footer__nav-column--contact">
+            <h3 lang="en" class="l-footer__nav-heading">Contact</h3>
+            <address class="l-footer__nav-column">
+              <dl class="l-footer__nav-list">
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Mail</dt>
+                  <dd class="l-footer__nav-item-value">kido.s2706@gmail.com</dd>
+                </div>
+                <div class="l-footer__nav-item">
+                  <dt class="l-footer__nav-item-label">Address</dt>
+                  <dd class="l-footer__nav-item-valuea">Miyazaki City, Miyazaki</dd>
+                </div>
+              </dl>
+            </address><!-- /.l-footer__nav-column -->
+          </section>
+
+        </div><!-- /.l-footer__columns -->
+      </div><!-- /.l-footer__main -->
+
+      <div class="l-footer__bottom">
+        <!-- Copyright -->
+        <small class="l-footer__copyright">&copy; 2026 Shiori Kido. All rights reserved. </small>
+      </div><!-- /.l-footer__bottom -->
+
+    </div><!-- /.l-container -->
+
+  </footer>
+
+</body>
+</html>
